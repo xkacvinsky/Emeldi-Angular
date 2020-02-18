@@ -1,0 +1,29 @@
+<div class="chooseDate" *ngIf="showBlock"  [formGroup]="reaForm">
+    <div class="firstChooseDate">
+    <label for="firstDate">Prvý deň: </label>
+    <input formControlName="firstDay" type="date" id="firstDate">
+    <label for="firstDayDropdown">Časť prvého dňa: </label>
+    <select formControlName="firstDayPart" id="firstDayDropdown">
+        <option value="" disabled selected>Zvoľte si časť dňa</option>
+        <option *ngFor="let item of dayParts" [ngValue]="item">
+            {{item}}
+        </option>
+    </select>
+    </div>
+    <div class="secondChooseDate">
+    <label for="secondDate">Druhý deň: </label>
+    <input formControlName="secondDay" type="date" id="secondDate">
+    <label for="seconDayDropdown">Časť druhého dňa: </label>
+    <select formControlName="secondDayPart" id="seconDayDropdown">
+        <option value="" disabled selected>Zvoľte si časť dňa</option>
+        <option *ngFor="let item of dayParts" [ngValue]="item">
+            {{item}}
+        </option>
+    </select>
+    </div>
+    <div class="chooseDateButtons">
+    <button  (click)="addData()">Pridať</button>
+    <button class="cancelButton" (click)="cancelAddForm()">Zrušiť</button>
+    </div>
+</div>
+<button class="showButton" (click)="showAddForm()">Pridať nový</button>

@@ -1,0 +1,26 @@
+<app-banner [title]="'Dovolenka'"></app-banner>
+<div class="chooseUser">
+    <form [formGroup]="selectForm">
+        <label for="teamDropdown">Tým: </label>
+        <select formControlName="team" id="teamdDropdown" >
+            <option value="" disabled selected>Zvoľte si tým</option>
+            <option *ngFor="let item of svc.teams" [ngValue]="item">
+                {{item.name}}
+            </option>
+        </select>
+        <label for="usersDropdown">Uživateľ: </label>
+        <select formControlName="user" id="usersDropdown">
+            <option value=""  disabled selected>Zvoľte si uživateľa</option>
+            <option *ngFor="let item of usersToShow" [ngValue]="item">
+                {{item.name}}
+            </option>
+        </select>
+        <button (click)="onSubmit()">ZMENA</button>
+        <p *ngIf="show">Zvolený uživateľ: {{showUser}} - {{showTeam}}</p>
+        
+        <app-add-vacation [reaForm]="selectForm"></app-add-vacation>
+        
+    </form>
+</div>
+<app-table [user]='shareUser'></app-table>
+

@@ -1,0 +1,93 @@
+header{
+    background-color: white;
+    width: 100%;
+}
+
+header a{
+    cursor: pointer;
+}
+
+header .title{
+    color: gray;
+    padding: 10px 250px;
+    font-size: 25px;
+}
+
+header span{
+    color: rgba(207, 2, 2, 0.753);
+    padding-right: 1px;
+    font-weight: bold;
+    
+}
+
+header .userMenu{
+    position: absolute;
+    top: 10px;
+    right: 30%;
+}
+
+.userMenu ul {
+    float: left;
+    width: 100%;
+    text-align: right;
+}
+
+.userMenu ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    border-radius: 4px; 
+    width: 100%;
+    min-width: 150px;
+}
+
+.userMenu ul li .nick{
+    margin-top: 5px;
+    text-align: right;
+}
+
+.userMenu ul li i{
+    color:  rgba(207, 2, 2, 0.753);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.userMenu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    color: rgba(207, 2, 2, 0.753);
+}
+
+.userMenu ul li ul{
+    display: block;
+    position: absolute;
+    background-color: white;
+    border-bottom-left-radius: 8px; 
+    border-bottom-right-radius: 8px;
+    text-align: right;
+    top: 38px;
+}
+
+.userMenu ul li:hover ul{
+    color: rgba(207, 2, 2, 0.753);
+}
+
+.userMenu ul li ul li a {
+    color: rgba(207, 2, 2, 0.753);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 8px;
+    border-bottom-left-radius: 8px; 
+    border-bottom-right-radius: 8px;
+}
+
+.userMenu ul li a:hover {
+    color:gray;
+}
+.userMenu ul li ul li a:hover {
+    color:gray;
+}

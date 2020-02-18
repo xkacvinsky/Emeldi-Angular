@@ -1,0 +1,17 @@
+.chooseUser {
+  position: absolute;
+  top: 120px;
+  left: 30px;
+  width: 100%;
+}
+
+label {
+  padding-left: 10px;
+}
+
+.chooseUser p{
+  padding-top: 10px;
+  padding-left: 10px; 
+}
+
+

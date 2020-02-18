@@ -1,0 +1,36 @@
+.navigateMenu{
+    position: absolute;
+    transition:all 0.3s linear;
+    top: 70px;
+    right: 30px;
+}
+
+.navigateMenu ul li a{
+    color: rgba(207, 2, 2, 0.753);
+    width: 100%;
+}
+
+.navigateMenu ul .li2{
+    background-color: rgba(207, 2, 2, 0.753);
+}
+
+.navigateMenu ul li .a2{
+    color: white;
+}
+
+.navigateMenu ul li a:hover{
+    color:gray;
+}
+
+.navigateMenu ul li{
+    float: left;
+    display: block;
+    width: 80px;
+    background-color:white;
+    margin-left: 5px;
+    text-align: center;
+    padding: 5px 3px;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px;
+}

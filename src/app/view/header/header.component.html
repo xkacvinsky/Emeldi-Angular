@@ -1,0 +1,15 @@
+<header>
+    <p class="title"><span>EMELDI</span>INTRANET</p>
+    <nav class="userMenu">
+      <ul>
+        <li><a href="#" class="nick" (click)="this.isMenuVisible = !this.isMenuVisible; changePosition()">{{name}} 
+        <i class="pi pi-angle-down"></i>
+        </a>
+          <ul *ngIf="this.isMenuVisible">
+            <li><a>Nastavenia</a></li>
+            <li><a>Odhlásiť sa</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+</header>

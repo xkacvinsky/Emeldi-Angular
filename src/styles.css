@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+}
+
+body .ui-paginator .ui-paginator-pages .ui-paginator-page.ui-state-active{
+  background-color: rgba(207, 2, 2, 0.753);
+}
+
+button{
+    margin: 5px 5px;
+    background-color: rgba(207, 2, 2, 0.753);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+select {
+    width: 150px;
+    height: 25px;
+  }
+  
+  select:required:invalid {
+    color: gray;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color: black;
+  }
+
+  button:hover{
+    background-color: rgb(207, 2, 2)
+  }
+  .ui-table table { table-layout: auto !important; }
+  
+  a{
+    cursor: pointer;
+  }
